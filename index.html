@@ -4,68 +4,85 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
     <title>WebStudio</title>
   </head>
 
   <body>
     <header>
       <nav>
-        <a href="">Web<span>Studio</span></a>
-        <ul>
-          <li><a href="#Agency">Agencja</a></li>
-          <li><a href="#Portfolio">Portfolio</a></li>
-          <li><a href="#Contact">Kontakt</a></li>
+        <a href="index.html" class="main-logo"
+          >Web<span class="color-black">Studio</span></a
+        >
+        <ul class="no-deco-list">
+          <li><a href="#Agency" class="nav-links">Agencja</a></li>
+          <li><a href="portfolio.html" class="nav-links">Portfolio</a></li>
+          <li><a href="#Contact" class="nav-links">Kontakt</a></li>
         </ul>
       </nav>
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+48 111 111 111">+48 111 111 111</a></li>
+      <ul class="no-deco-list">
+        <li>
+          <a href="mailto:info@devstudio.com" class="nav-address"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li>
+          <a href="tel:+48 111 111 111" class="nav-address">+48 111 111 111</a>
+        </li>
       </ul>
     </header>
     <main>
-      <div>
-        <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-        <button type="button">Zamów usługę</button>
+      <div class="ad-section">
+        <h1 class="ad-text">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+        <button type="button" class="ad-button">
+          <span class="ad-button-text">Zamów usługę</span>
+        </button>
       </div>
 
-      <section>
-        <ul>
+      <section class="info-section">
+        <ul class="no-deco-list">
           <li>
-            <h3>LOREM IPSUM</h3>
-            <p>
+            <h3 class="info-example-header">LOREM IPSUM</h3>
+            <p class="info-example-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
           <li>
-            <h3>LOREM IPSUM</h3>
-            <p>
+            <h3 class="info-example-header">LOREM IPSUM</h3>
+            <p class="info-example-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
           <li>
-            <h3>LOREM IPSUM</h3>
-            <p>
+            <h3 class="info-example-header">LOREM IPSUM</h3>
+            <p class="info-example-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
           <li>
-            <h3>LOREM IPSUM</h3>
-            <p>
+            <h3 class="info-example-header">LOREM IPSUM</h3>
+            <p class="info-example-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Czym się zajmujemy</h2>
-        <ul>
+      <section class="info-section">
+        <h2 class="section-header">Czym się zajmujemy</h2>
+        <ul class="no-deco-list">
           <li>
             <img
-              src="images/portfolio_1.jpg"
+              src="images/przyklad_1.jpg"
               alt="Pisanie kodu na klawiaturze"
               width="370"
               height="294"
@@ -73,7 +90,7 @@
           </li>
           <li>
             <img
-              src="images/portfolio_2.jpg"
+              src="images/przyklad_2.jpg"
               alt="Wybieranie szablonu menu aplikacji"
               width="370"
               height="294"
@@ -81,7 +98,7 @@
           </li>
           <li>
             <img
-              src="images/portfolio_3.jpg"
+              src="images/przyklad_3.jpg"
               alt="Oglądanie grafiki na tablecie"
               width="370"
               height="294"
@@ -89,9 +106,9 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Nasz zespół</h2>
-        <ul>
+      <section class="team-section">
+        <h2 class="section-header">Nasz zespół</h2>
+        <ul class="no-deco-list">
           <li>
             <img
               src="images/team_1.jpg"
@@ -99,8 +116,8 @@
               width="270"
               height="260"
             />
-            <h3>John Doe</h3>
-            <p>Product Designer</p>
+            <h3 class="team-description-name">John Doe</h3>
+            <p class="team-description-spec">Product Designer</p>
           </li>
           <li>
             <img
@@ -109,8 +126,8 @@
               width="270"
               height="260"
             />
-            <h3>John Doe</h3>
-            <p>Frontend Developer</p>
+            <h3 class="team-description-name">John Doe</h3>
+            <p class="team-description-spec">Frontend Developer</p>
           </li>
           <li>
             <img
@@ -119,8 +136,8 @@
               width="270"
               height="260"
             />
-            <h3>John Doe</h3>
-            <p>Marketing</p>
+            <h3 class="team-description-name">John Doe</h3>
+            <p class="team-description-spec">Marketing</p>
           </li>
           <li>
             <img
@@ -129,19 +146,29 @@
               width="270"
               height="260"
             />
-            <h3>John Doe</h3>
-            <p>UI Manager</p>
+            <h3 class="team-description-name">John Doe</h3>
+            <p class="team-description-spec">UI Manager</p>
           </li>
         </ul>
       </section>
     </main>
     <footer>
-      <a href="">Web<span>Studio</span></a>
+      <a href="index.html" class="main-logo"
+        >Web<span class="color-white">Studio</span></a
+      >
       <address>
-        <ul>
-          <li>m. Warszawa, Aleje Jerozolimskie 21</li>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+48 111 111 111">+48 111 111 111</a></li>
+        <ul class="no-deco-list">
+          <li class="footer-address">m. Warszawa, Aleje Jerozolimskie 21</li>
+          <li>
+            <a href="mailto:info@devstudio.com" class="footer-links"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a href="tel:+48 111 111 111" class="footer-links"
+              >+48 111 111 111</a
+            >
+          </li>
         </ul>
       </address>
     </footer>
